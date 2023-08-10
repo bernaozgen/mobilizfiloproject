@@ -1,0 +1,5 @@
+package com.brnoz.demo.configurations.mapper;
+
+public class ModelMapperConfiguration {
+
+}

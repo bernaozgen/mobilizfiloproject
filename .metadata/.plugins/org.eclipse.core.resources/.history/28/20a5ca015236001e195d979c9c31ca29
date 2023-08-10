@@ -1,0 +1,6 @@
+package com.brnoz.demo.configurations.exceptions;
+
+@RestControllerAdvice
+public class FieldExceptionHandler {
+
+}

@@ -1,0 +1,5 @@
+package com.brnoz.demo.utilities.results;
+
+public class DataResult {
+
+}

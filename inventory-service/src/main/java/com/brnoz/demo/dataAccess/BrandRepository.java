@@ -1,0 +1,11 @@
+package com.brnoz.demo.dataAccess;
+
+import java.util.UUID;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.brnoz.demo.entities.Brand;
+
+public interface BrandRepository extends JpaRepository<Brand, UUID>{
+
+}

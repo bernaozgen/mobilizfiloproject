@@ -1,0 +1,7 @@
+package com.brnoz.demo.configurations.exceptions;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class FieldExceptionHandler {
+
+}

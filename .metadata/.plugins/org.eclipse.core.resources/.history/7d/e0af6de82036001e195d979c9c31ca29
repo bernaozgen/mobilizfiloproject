@@ -1,0 +1,7 @@
+application: ''
+cloud: ''
+config: ''
+import: configserver:http://localhost:8888
+name: apigateway
+profile: dev
+spring: ''

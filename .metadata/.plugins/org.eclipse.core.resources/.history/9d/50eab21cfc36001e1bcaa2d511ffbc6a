@@ -1,0 +1,22 @@
+package com.brnoz.demo.entities;
+
+
+
+import java.util.UUID;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Table(name = "cars")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+public class Car {
+
+	private UUID id;
+	
+}

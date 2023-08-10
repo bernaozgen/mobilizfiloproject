@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.config.server.EnableConfigServer"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="com.brnoz.demo.utilities.mapping.ModelMapperService"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="org.modelmapper.spi.MatchingStrategy"/>
+    <fullyQualifiedTypeName name="org.modelmapper.convention.MatchingStrategies"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.modelmapper.ModelMapper"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="com.brnoz.demo.utilities.results.Result"/>
+    <fullyQualifiedTypeName name="com.brnoz.demo.utilities.results.SuccessResult"/>
+    <fullyQualifiedTypeName name="com.brnoz.demo.utilities.results.SuccessDataResult"/>
+    <fullyQualifiedTypeName name="com.brnoz.demo.utilities.results.DataResult"/>
+    <fullyQualifiedTypeName name="com.brnoz.demo.utilities.results.ErrorDataResult"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.client.discovery.EnableDiscoveryClient"/>
+</qualifiedTypeNameHistroy>
