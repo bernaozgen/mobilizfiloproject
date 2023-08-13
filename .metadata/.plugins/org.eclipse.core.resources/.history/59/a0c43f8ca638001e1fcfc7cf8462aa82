@@ -1,0 +1,11 @@
+package com.brnoz.demo.business.abstracts;
+
+import com.brnoz.demo.business.dto.requests.created.CreateBrandRequest;
+import com.brnoz.demo.business.dto.responses.created.CreateBrandResponse;
+import com.brnoz.demo.utilities.results.DataResult;
+
+public interface BrandService {
+
+	DataResult<CreateBrandResponse> add(CreateBrandRequest request);
+
+}

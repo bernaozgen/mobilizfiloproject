@@ -1,0 +1,6 @@
+package com.brnoz.demo.business.abstracts;
+
+public interface CarService {
+ 
+
+}

@@ -1,0 +1,16 @@
+package com.brnoz.demo.business.dto.responses.created;
+
+import java.util.UUID;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class CreateBrandResponse {
+
+	private UUID id;
+	private String brand;
+}

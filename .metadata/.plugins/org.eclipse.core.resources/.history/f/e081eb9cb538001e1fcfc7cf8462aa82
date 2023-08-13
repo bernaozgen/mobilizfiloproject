@@ -1,0 +1,7 @@
+package com.brnoz.demo.business.constants;
+
+public class Messages {
+
+	public static final String CarCreated = "Car Created";
+
+}

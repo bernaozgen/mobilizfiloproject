@@ -1,0 +1,28 @@
+package com.brnoz.demo.business.dto.requests.updated;
+
+import java.util.UUID;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class UpdateCarRequest {
+
+	private UUID id;
+
+	private String licensePlate;
+
+	private String model;
+
+	private String modelYear;
+
+	private String brand;
+
+	private String chassisNumber;
+
+	private String label;
+
+}

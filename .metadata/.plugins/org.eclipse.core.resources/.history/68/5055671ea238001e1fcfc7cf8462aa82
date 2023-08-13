@@ -1,0 +1,5 @@
+package com.brnoz.demo.business.dto.requests.created;
+
+public class CreateBrrandRequest {
+
+}

@@ -1,0 +1,21 @@
+package com.brnoz.demo.business.concretes;
+
+import org.springframework.stereotype.Service;
+
+import com.brnoz.demo.business.abstracts.BrandService;
+import com.brnoz.demo.business.dto.requests.created.CreateBrandRequest;
+import com.brnoz.demo.business.dto.responses.created.CreateBrandResponse;
+import com.brnoz.demo.dataAccess.BrandRepository;
+import com.brnoz.demo.utilities.mapping.ModelMapperService;
+import com.brnoz.demo.utilities.results.DataResult;
+
+@Service
+public class BrandManager implements BrandService{
+	private BrandRepository repository;
+	private ModelMapperService modelMapperService;
+	@Override
+	public DataResult<CreateBrandResponse> add(CreateBrandRequest request) {
+		
+		return null;
+	}
+}

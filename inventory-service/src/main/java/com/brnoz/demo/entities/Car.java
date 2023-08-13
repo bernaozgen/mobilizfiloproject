@@ -1,5 +1,6 @@
 package com.brnoz.demo.entities;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 import jakarta.persistence.Column;
@@ -7,8 +8,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -25,12 +24,17 @@ public class Car {
 	@GeneratedValue(strategy = GenerationType.UUID)
 	private UUID id;
 
-	@ManyToOne
-	@JoinColumn(name = "modelId")
-	private Model model;
+	@Column(name = "plateNumber")
+	private String plateNumber;
 
-	@Column(name = "licensePlate")
-	private String licensePlate;
+	@Column(name = "model")
+	private String model;
+
+	@Column(name = "modelYear")
+	private LocalDate modelYear;
+
+	@Column(name = "brand")
+	private String brand;
 
 	@Column(name = "chassisNumber")
 	private String chassisNumber;

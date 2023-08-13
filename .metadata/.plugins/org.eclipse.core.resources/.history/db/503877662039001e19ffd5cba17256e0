@@ -1,0 +1,58 @@
+package com.brnoz.demo.webApi.controllers;
+
+import java.util.List;
+import java.util.UUID;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.brnoz.demo.business.abstracts.CarService;
+import com.brnoz.demo.business.dto.requests.created.CreateCarRequest;
+import com.brnoz.demo.business.dto.requests.updated.UpdateCarRequest;
+import com.brnoz.demo.business.dto.responses.created.CreateCarResponse;
+import com.brnoz.demo.business.dto.responses.get.GetAllCarResponse;
+import com.brnoz.demo.business.dto.responses.get.GetByCarResponse;
+import com.brnoz.demo.business.dto.responses.updated.UpdateCarResponse;
+import com.brnoz.demo.utilities.results.DataResult;
+import com.brnoz.demo.utilities.results.Result;
+
+import jakarta.validation.Valid;
+import lombok.AllArgsConstructor;
+
+@RestController
+@RequestMapping("api/cars")
+@AllArgsConstructor
+public class CarController {
+	private CarService service;
+
+	@PostMapping
+	public DataResult<CreateCarResponse> add(@PathVariable @Valid CreateCarRequest request) {
+		return this.service.add(request);
+	}
+
+	@PutMapping
+	public DataResult<UpdateCarResponse> update(@PathVariable @Valid UpdateCarRequest request) {
+		return this.service.update(request);
+	}
+
+	@GetMapping
+	public DataResult<List<GetAllCarResponse>> getAll() {
+		return this.service.getAll();
+	}
+
+	@GetMapping("/{plateNumber}")
+	public DataResult<GetByCarResponse> getByCar(@PathVariable String plateNumber) {
+		return this.service.getByCar(plateNumber);
+	}
+
+	@DeleteMapping("/{id}")
+	public Result delete(@PathVariable UUID id) {
+		return this.service.delete(id);
+	}
+
+}

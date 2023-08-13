@@ -1,0 +1,23 @@
+package com.brnoz.demo.business.dto.requests.created;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class CreateCarRequest {
+
+	private String plateNumber;
+
+	private String model;
+
+	private String modelYear;
+
+	private String brand;
+
+	private String chassisNumber;
+
+	private String label;
+}

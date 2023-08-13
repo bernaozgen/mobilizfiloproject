@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.brnoz.demo.entities.Car;
 
 public interface CarRepository extends JpaRepository<Car, UUID> {
-
+	Car findByPlateNumber(String PlateNumber);
 }

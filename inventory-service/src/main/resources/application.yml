@@ -1,6 +1,6 @@
 spring:
   application:
-    name: inventory-service
+    name: vehice
   cloud:
     config:
       profile: dev

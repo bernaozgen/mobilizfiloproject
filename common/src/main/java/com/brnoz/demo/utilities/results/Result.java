@@ -1,5 +1,6 @@
 package com.brnoz.demo.utilities.results;
 
+
 public class Result {
 
 	private boolean success;

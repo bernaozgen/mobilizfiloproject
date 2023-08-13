@@ -1,0 +1,12 @@
+package com.brnoz.demo.business.concretes;
+
+import org.springframework.stereotype.Service;
+
+import com.brnoz.demo.dataAccess.BrandRepository;
+import com.brnoz.demo.utilities.mapping.ModelMapperService;
+
+@Service
+public class BrandManager {
+	private BrandRepository repository;
+	private ModelMapperService modelMapperService;
+}
